@@ -33,7 +33,7 @@ dependencies = [
     "django-cors-headers>=4.3",
 
     # DREAM
-    "dream-core @ git+https://github.com/DREAM-health/dream-core.git@49e21e3f2246edff1169c221ee39b0acde39179c",
+    "dream-core @ git+https://github.com/DREAM-health/dream-core.git@v0.0.1-alpha",
 ]
 
 [project.optional-dependencies]
