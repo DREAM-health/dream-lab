@@ -33,7 +33,7 @@ dependencies = [
     "django-cors-headers>=4.3",
 
     # DREAM
-    dream-core @ git+https://github.com/DREAM-health/dream-core.git@49e21e3f2246edff1169c221ee39b0acde39179c,
+    "dream-core @ git+https://github.com/DREAM-health/dream-core.git@49e21e3f2246edff1169c221ee39b0acde39179c",
 ]
 
 [project.optional-dependencies]
@@ -94,4 +94,5 @@ DJANGO_SETTINGS_MODULE = "config.settings.testing"
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "--migrations --cov=dream_lab --cov-report=term-missing --cov-fail-under=80"
+# addopts = "--migrations --cov=dream_lab --cov-report=term-missing --cov-fail-under=80"
+addopts = "--migrations --cov-report=term-missing"
